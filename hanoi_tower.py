@@ -44,6 +44,3 @@ class hanoi:
         resolver_inter(Mov)
         print(self.inicial.data.tolist(), "pino inicial\n", self.auxiliar.data.tolist(), "pino auxiliar\n", self.final.data.tolist(), "pino final\n", "Passos =", self.passos)
         return
-    
-teste = hanoi(7)
-teste.resolver(10)
