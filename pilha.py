@@ -1,7 +1,7 @@
 import array
 
 class pilha:
-    def __init__(self, max:int = 100, tipo = 'f'):
+    def __init__(self, max:int = 100, tipo:str = 'f'):
         self.data = array.array(tipo)
         self.max = max
         self.len= 0
