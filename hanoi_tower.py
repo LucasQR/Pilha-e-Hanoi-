@@ -27,7 +27,7 @@ class hanoi:
         else:
             return
 
-    def resolver(self, Mov = 0 ):    
+    def resolver(self, Mov:int = 0 ):    
         print(self.inicial.data.tolist(), "pino inicial\n", self.auxiliar.data.tolist(), "pino auxiliar\n", self.final.data.tolist(), "pino final\n", "Passos =", self.passos)
         input("favor pressionar [ENTER] para continuar")
         def resolver_inter(M, n = self.num, A = self.inicial, B= self.auxiliar, C=self.final):
@@ -44,9 +44,12 @@ class hanoi:
         resolver_inter(Mov)
         print(self.inicial.data.tolist(), "pino inicial\n", self.auxiliar.data.tolist(), "pino auxiliar\n", self.final.data.tolist(), "pino final\n", "Passos =", self.passos)
         return
+<<<<<<< HEAD
     
 teste = criar(12)
 teste2 = pilha.pilha()
 
 mover(teste, teste2)
 print(teste.data.tolist(), teste2.data.tolist())
+=======
+>>>>>>> refs/remotes/origin/main
