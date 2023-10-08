@@ -44,12 +44,3 @@ class hanoi:
         resolver_inter(Mov)
         print(self.inicial.data.tolist(), "pino inicial\n", self.auxiliar.data.tolist(), "pino auxiliar\n", self.final.data.tolist(), "pino final\n", "Passos =", self.passos)
         return
-<<<<<<< HEAD
-    
-teste = criar(12)
-teste2 = pilha.pilha()
-
-mover(teste, teste2)
-print(teste.data.tolist(), teste2.data.tolist())
-=======
->>>>>>> refs/remotes/origin/main
