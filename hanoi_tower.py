@@ -8,8 +8,8 @@ def criar(num:int):
     return pino
 
 def mover(A:pilha.pilha, B:pilha.pilha):
-     B.empilha(A.data[-1])
-     A.desempilha()
+     B.empilha(A.desempilha())
+     
 
 class hanoi:
     def __init__(self, num:int):
@@ -45,5 +45,8 @@ class hanoi:
         print(self.inicial.data.tolist(), "pino inicial\n", self.auxiliar.data.tolist(), "pino auxiliar\n", self.final.data.tolist(), "pino final\n", "Passos =", self.passos)
         return
     
-teste = hanoi(7)
-teste.resolver(10)
+teste = criar(12)
+teste2 = pilha.pilha()
+
+mover(teste, teste2)
+print(teste.data.tolist(), teste2.data.tolist())

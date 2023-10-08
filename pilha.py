@@ -1,7 +1,7 @@
 import array
 
 class pilha:
-    def __init__(self, max:int = 100, tipo = 'f'):
+    def __init__(self, max:int = 100, tipo:str = 'f'):
         self.data = array.array(tipo)
         self.max = max
         self.len= 0
@@ -32,8 +32,8 @@ class pilha:
             raise Exception("PilhaVaziaErro")
         
         else:
-            self.data.pop()
             self.len += -1
+            return(self.data.pop())
 
     def troca(self):
         if self.len <2:
@@ -44,4 +44,3 @@ class pilha:
             penultimo = self.data.pop()
             self.data.append(ultimo)
             self.data.append(penultimo)
-
